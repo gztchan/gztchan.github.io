@@ -1,0 +1,9 @@
+.text {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.text p {
+  margin: 0;
+}

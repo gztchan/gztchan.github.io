@@ -1,0 +1,39 @@
+.general {
+  width: 100%;
+  height: 100vh;
+  padding: 1.25rem;
+}
+
+.main {
+  width: 60%;
+}
+
+.header {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.sidemenu {
+  top: 0;
+  right: 0;
+  width: 40%;
+  position: fixed;
+}
+
+@media only screen and (max-width: 1024px) {
+  .general {
+    padding: 1rem;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .sidemenu {
+    display: none;
+  }
+
+  .header {
+    display: block;
+  }
+}

@@ -1,0 +1,80 @@
+---
+path: "/posts/figma-2-prototyping-handoff"
+title: Figma 2.0, Now with Prototyping and Developer Handoff
+date: "2017-07-27"
+---
+
+![image.png](https://static.cnodejs.org/FkkWhWHr7UBEXSAnEebrMAuUfb9v)
+
+类型：翻译
+
+来源：[Figma on Medium](https://blog.figma.com/)
+
+作者：Figma
+
+Figma 今天要为大家带来一个大消息 - 我们很高兴终于揭开 Figma 2.0 的面纱。它是你喜欢的产品的扩展版本（或至少像很多，哈哈😉？）具有重要的新特性：Prototyping 和 Developer Handoff。
+
+在 Figma 1.0 中，我们为云端协同设计奠定了基础，创造出一个不需要任何保存，导出，同步或通过电子邮件传输的产品。我们设计出了帮助设计师更好地工作的特性，如[多播放器功能](https://blog.figma.com/multiplayer-editing-in-figma-8f8076c6c3a6)和[团队组件库](https://blog.figma.com/team-libraries-in-figma-409fa5e20f7)。
+
+在公开发布后的几个月里，我们更深入地了解到设计师痛点的深度和广度 - 即它们远远超出与设计师合作的摩擦力。为了真正精简的工作流程，设计师需要能够与营销部门、执行团队和建筑设计人员进行协作。
+
+> If Figma 1.0 focused on making it easier for designers to collaborate, Figma 2.0 is about empowering entire teams.（如果 Figma 1.0 是为了让设计师能更容易地进行协作，那么 2.0 就是为了提高整个团队的作战能力。）
+
+我们的目的是帮助人们共同建立更好的软件，而 Figma 2.0 将更进一步。
+
+### Prototyping 原型设计
+
+![ec34ea6dgy1fhx5dt920zg20km0c4tbw.gif](//static.cnodejs.org/FjIlRFtyJ1Cn4IbMapBJkJvmzmBd)
+
+设计人员需要一个具有表现力，干净直观的作品展示方式。例如向同行展示反馈意见，向高管提出最终批准计划，或查看用户在测试期间如何与界面进行交互，原型在技术设计过程中发挥关键作用。
+
+几个月来，用户已经要求这种功能，但是我们选择先暂缓他们的请求。我们已经与像 [Framer](https://blog.figma.com/introducing-figmas-integration-with-framer-c69a747aeee2) 这样的核心竞争力的优秀产品相结合，希望专注于建立世界一流的设计工具。
+
+但是当与更多的用户交谈时，我们意识到将无法再继续忽视原型设计。设计师非常渴求一个解决方案，能让他们在同一个设计工具中进行原型设计与展示。由于 Figma 是唯一能在线上运行的设计工具，所以非常适合满足这一需求。
+
+#### Fun Figma-fied features 有趣的特性
+
+虽然 Figma 的原型设功能并不涵盖所有的场景，但它可以满足我们许多用户的需求。在早期的研究过程中，几乎所有的设计师都提到了高级运动图形的幻灯片和热点功能。
+
+> In Figma, the prototype is a living document rather than a dead artifact.（在 Figma 中，原型设计相当于一个动态的设计文档，而非固定不变的摆设品。）
+
+我们对基于云的技术为 Figma 提供的能力感到非常兴奋。在 Figma 中，原型是一个动态，而不是一个静止不变的文档。当你对原始设计进行更改时，它们将在您的演示文稿中实时反映...不需要输出或同步。
+
+**一些特性：**
+- 当进行直播时，你可以调整框架或实时添加屏幕。我们发现在设计讨论中，这个特性发挥了很大的作用。
+- 不需要无尽的版本...或像在其他工具中，你对画板的疯狂命名约定（对画板 `1`，画板 `a1`，画板 `a1b`，画板 `a1bcdefgahhhhhfuckthis` 说再见吧）。
+- 可以从手机导航演示文稿。任何想要像会议室一样漫步在会议室的设计师都在进行 TED 演讲，都能得到实现。
+- 可以使用带有节点的组件（符号），因此当你从组件中设置导航时，它将填充所有实例，如下面的 gif（组件是左上方的 X 按钮）所示：
+
+![ec34ea6dgy1fhx5hnldn6g20m80c6gqv.gif](https://static.cnodejs.org/FkNegEu0lp4PCPPaTdU-u4F8Kv8E)
+
+要构建原型，请选择右侧属性面板中的 `prototype mode`，然后通过节点连接框架。你可以将不同的对象变成热点，当用户与设计的组件交互时，他们会被带到目的页面。 或者，您可以通过在画布上排序框架来创建简单的演示文稿。下面的教程视频可以很好地概述这一过程：
+
+[![](https://i.loli.net/2019/06/08/5cfb6e6c4060982439.png)](https://www.youtube.com/watch?v=ex9rP3SEHW4&feature=youtu.be)
+
+最终，Figma 的原型是关于在设计和演示之间消除抽象层。为了满足不同设计师在不同工作流程的需求，我们将继续集成其他专用原型设计工具。
+
+### Developer handoff 开发者亲和
+
+Figma 的第二大变化是新增的 Developer Handoff 特性。设计师现在可以共享具有访问权限的开发文件，在右侧属性面板中看到 `code` 模式选项卡。
+
+![image.png](https://static.cnodejs.org/FgiEomre3Lx7z9UrUaRr1be3cCwS)
+
+#### 更高的角度看：
+- 开发者可以选择一个对象并将其悬停在另一个对象上，以查看它们之间的间距
+- 可以获取 CSS，iOS 和 Android 的视图相关数据
+- 我们已将数据分为：
+  - 表视图，它们分解属性，以便它们更容易地进行滑动
+  - 生成的标记/代码
+
+我们相信尽可能使设计变得容易，所以希望这将赋予你的团队更多的能力。你不再需要为工程师编辑能力买单 - 相反，他们仅仅需要“查看”就可以了。请查看我们的教程视频中的更多信息：
+
+[![](https://static.cnodejs.org/Fq2EIUCgdJ3qRhvXrdrSGTlW2Dh2)](https://youtu.be/tVPHB7gOAGs)
+
+### The next chapter 下一步
+
+我们很高兴提供一个一体的工具，帮助团队更好地合作。也就是说，我们知道设计师和技术公司有各种各样的工作流程和要求。
+
+Figma 在更广泛，充满活力的生态系统中发挥作用，对于下一步，我们期待与该领域的其他工具集成。我们正在为更广泛的平台建立我们的第一个合作伙伴关系，所以如果你有兴趣与我们合作，请给告诉我们。
+
+同时，让我们知道你对 Figma 2.0 的看法！
