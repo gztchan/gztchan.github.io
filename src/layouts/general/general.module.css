@@ -1,4 +1,5 @@
 .general {
+  position: relative;
   width: 100%;
   height: 100vh;
   padding: 1.25rem;
@@ -13,11 +14,13 @@
   margin-bottom: 20px;
 }
 
-.sidemenu {
+.rightSide {
   top: 0;
   right: 0;
-  width: 40%;
+  width: 35%;
+  height: 100vh;
   position: fixed;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -29,7 +32,7 @@
     width: 100%;
   }
 
-  .sidemenu {
+  .rightSide {
     display: none;
   }
 

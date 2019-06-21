@@ -4,15 +4,16 @@ module.exports = {
     description: `Excited to learn, research and make interesting things. 😝`,
     author: {
       name: `Tony Chan`,
-      avatar: 'https://gztchan.oss-ap-southeast-1.aliyuncs.com/img/WechatIMG1851.jpeg',
+      avatar: 'https://gztchan.oss-ap-southeast-1.aliyuncs.com/img/WechatIMG1851.jpeg'
     },
     nav: [
-      { name: 'Home', path: '/' },
-      { name: 'Posts', path: '/posts' },
-      { name: 'Gallery', path: '/gallery' },
-      // { name: 'Contact', path: '/posts/contact-me' },
-      // { name: 'About', path: '/about' },
-    ]
+      { name: 'Home', path: '/', icon: 'faHome' },
+      { name: 'Posts', path: '/posts', icon: 'faEnvelopeOpenText' },
+      { name: 'Gallery', path: '/gallery', icon: 'faCamera' },
+      { name: 'Contact', path: '/posts/contact-me', icon: 'faSms' },
+      // { name: 'About', path: '/posts/about-tony-chan', icon: 'faAddressCard' },
+    ],
+    alipay: 'https://gztchan.oss-ap-southeast-1.aliyuncs.com/img/20190621205545.png?x-oss-process=image/quality,q_50',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -48,7 +49,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/artsypink-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
