@@ -7,10 +7,9 @@ import GeneralLayout from '../layouts/general'
 
 import PostLink from '../components/post-link'
 
-
-export default function Template({
+const PostsPage = ({
   data, // this prop will be injected by the GraphQL query below.
-}) {
+}) => {
   return (
     <GeneralLayout>
       <div className={{}}>
@@ -39,3 +38,5 @@ export const query = graphql`{
   }
 }
 `
+
+export default PostsPage

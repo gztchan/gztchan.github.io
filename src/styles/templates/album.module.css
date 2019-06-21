@@ -1,0 +1,12 @@
+.figureWrap {
+  margin-bottom: 5rem;
+}
+
+.figureWrap img {
+  margin-bottom: 1.25rem;
+}
+
+.figureWrap figcaption {
+  font-size: 0.85rem;
+  text-align: center;
+}

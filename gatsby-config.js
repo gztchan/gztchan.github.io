@@ -9,13 +9,17 @@ module.exports = {
     nav: [
       { name: 'Home', path: '/' },
       { name: 'Posts', path: '/posts' },
-      // { name: 'Gallery', path: '/gallery' },
+      { name: 'Gallery', path: '/gallery' },
       // { name: 'Contact', path: '/posts/contact-me' },
       // { name: 'About', path: '/about' },
     ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-transformer-json`,
+      options: [{ typeName: 'Json' }],
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

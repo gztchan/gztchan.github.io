@@ -6,6 +6,7 @@
 
 // You can delete this file if you're not using it
 
+const fs = require(`fs`)
 const path = require(`path`)
 
 function createPostPage({ actions, graphql }) {
@@ -41,20 +42,34 @@ function createPostPage({ actions, graphql }) {
   })
 }
 
-function createPhotoPage({ actions, graphql }) {
+function createAlbumPage({ actions, graphql }) {
   const { createPage } = actions;
-  const photoTemplate = path.resolve(`src/templates/photo.js`)
+  const template = path.resolve(`src/templates/album.js`)
 
-  const photoCollections = [{
-    path: '/gallery/no-name',
-  }]
+  return graphql(`
+    query {
+      allAlbumsJson(limit: 1000) {
+        edges {
+          node {
+            title
+            path
+            collection {
+              caption
+              url
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
 
-  return Promise.resolve().then(() => {
-
-    return photoCollections.forEach(collection => {
+    return result.data.allAlbumsJson.edges.forEach(({ node }) => {
       createPage({
-        path: collection.path,
-        component: photoTemplate,
+        path: node.path,
+        component: template,
         context: {}, // additional data can be passed via context
       })
     })
@@ -64,6 +79,6 @@ function createPhotoPage({ actions, graphql }) {
 exports.createPages = ({ actions, graphql }) => {
   return Promise.all([
     createPostPage({ actions, graphql }),
-    createPhotoPage({ actions, graphql })
+    createAlbumPage({ actions, graphql })
   ])
 }
