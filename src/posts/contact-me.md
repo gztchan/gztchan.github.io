@@ -16,6 +16,6 @@ GitHub: [@gztchan](https://github.com/gztchan) - 主要开源社区活动平台
 
 Dribbble: [@gztchan](https://dribbble.com/gztchan) - 设计作品展示
 
-LinkedIn: [@gztchan](https://linkedin.com/gztchan) - 职业社交平台，有我的职业发展路径
+LinkedIn: [@gztchan](https://www.linkedin.com/in/gztchan/) - 职业社交平台，有我的职业发展路径
 
 Medium：[@gztchan](https://medium.com/gztchan) - 有价值信息的创作平台

@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `http://artsypunk.com`,
     title: `Spread ideas from tony's deep inside.`,
     description: `Excited to learn, research and make interesting things. 😝`,
     author: {
@@ -52,6 +53,7 @@ module.exports = {
         icon: `src/images/artsypink-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

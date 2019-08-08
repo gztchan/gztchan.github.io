@@ -48,12 +48,12 @@ const Sidebar = ({ children }) => {
           <ul>
             {data.site.siteMetadata.nav.map(item => {
               return (
-                <li style={liStyle}>
-                  <Link to={item.path}>
+                <Link to={item.path}>
+                  <li style={liStyle}>
                     <span style={{ marginRight: 10 }}><FontAwesomeIcon icon={Icons[item.icon]}/></span>
                     <span>{item.name}</span>
-                  </Link>
-                </li>
+                  </li>
+                </Link>
               )
             })}
             <li className={sidebarStyle.payWrap} style={liStyle} onClick={() => setVisible(!visible)}>
