@@ -7,11 +7,18 @@ import PostLink from '../components/post-link'
 const GalleryPage = ({
   data, // this prop will be injected by the GraphQL query below.
 }) => {
+
+  const sorted = data.allAlbumsJson.edges.sort((a, b) => {
+    const _a = (new Date(a.node.date)).getTime();
+    const _b = (new Date(b.node.date)).getTime();
+    return _b - _a;
+  })
+
   return (
     <GeneralLayout>
       <div className={{}}>
-        {data.allAlbumsJson.edges.map(({ node }) => {
-          return <PostLink data={node} />
+        {sorted.map(({ node }, index) => {
+          return <PostLink key={index} data={node} />
         })}
       </div>
     </GeneralLayout>
